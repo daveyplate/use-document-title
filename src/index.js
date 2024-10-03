@@ -1,1 +1,1 @@
-export * from './test-module'
+export * from './use-document-title'
