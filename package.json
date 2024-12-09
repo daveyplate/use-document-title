@@ -1,7 +1,7 @@
 {
   "name": "@daveyplate/use-document-title",
   "homepage": "https://github.com/daveyplate/use-document-title",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to get the document title and watch for changes",
   "module": "dist/index",
   "types": "dist/index",
