@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react'
 
 /**
  * Get the current document title and update it when it changes
- * @returns {string} The current document title
  */
 export function useDocumentTitle() {
-    const [title, setTitle] = useState(null)
+    const [title, setTitle] = useState("")
 
     useEffect(() => {
         // Observe the title element for changes

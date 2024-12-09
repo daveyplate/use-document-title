@@ -3,15 +3,16 @@
   "homepage": "https://github.com/daveyplate/use-document-title",
   "version": "1.0.0",
   "description": "React hook to get the document title and watch for changes",
-  "module": "src/index",
+  "module": "dist/index",
   "types": "dist/index",
   "files": [
     "src",
     "dist"
   ],
   "scripts": {
-    "build": "npx tsc",
-    "prepublishOnly": "npm run build"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "rm -rf dist && npm run build"
   },
   "keywords": [
     "react",
@@ -19,13 +20,14 @@
     "document",
     "title"
   ],
-  "author": "LeakedDave",
+  "author": "daveycodez",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "@types/react": "^19.0.1"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   }
 }
